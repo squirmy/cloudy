@@ -1,0 +1,9 @@
+containers:
+  build-env:
+    image: node:alpine
+
+tasks:
+  build:
+    run:
+      container: build-env
+      command: node --version
